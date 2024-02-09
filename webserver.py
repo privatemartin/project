@@ -22,7 +22,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 # Set API key and check OpenAI version
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 required_version = version.parse("1.1.1")
 current_version = version.parse(openai.__version__)
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
